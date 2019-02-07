@@ -106,7 +106,7 @@ export default class RecordData {
           warn(
             `You pushed a record of type '${
               this.modelName
-            }' with a relationship '${relationshipName}' configured as 'async: false'. You've included a link but no primary data, this may be an error in your payload. EmberData will treat this relationship as known-to-be-empty.`,
+            }' with a relationship '${relationshipName}' configured as 'async: false'. You've included a link but no primary data, this may be an error in your payload.`,
             isAsync || relationshipData.data,
             {
               id: 'ds.store.push-link-for-sync-relationship',
